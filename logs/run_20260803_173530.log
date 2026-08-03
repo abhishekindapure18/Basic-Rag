@@ -1,0 +1,20 @@
+2026-08-03 17:35:30,482 | INFO | hr_assistant.pipeline | Building HR assistant...
+2026-08-03 17:35:30,483 | INFO | hr_assistant.tracing | LangSmith tracing ENABLED - project 'hr_policy_assistant', traces at https://smith.langchain.com
+2026-08-03 17:35:30,486 | INFO | hr_assistant.vector_store | Checking if FAISS index exists at 'data\faiss_index'
+2026-08-03 17:35:30,487 | INFO | hr_assistant.pipeline | Vector store already exists on disk, reusing it
+2026-08-03 17:35:30,498 | INFO | hr_assistant.vector_store | Loading FAISS index from 'data\faiss_index'
+2026-08-03 17:35:30,508 | INFO | hr_assistant.embeddings | Initializing embeddings model 'jina-embeddings-v2-base-en'
+2026-08-03 17:35:30,537 | INFO | faiss.loader | Loading faiss with AVX2 support.
+2026-08-03 17:35:30,537 | INFO | faiss.loader | Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-08-03 17:35:30,538 | INFO | faiss.loader | Loading faiss.
+2026-08-03 17:35:30,555 | INFO | faiss.loader | Successfully loaded faiss.
+2026-08-03 17:35:30,560 | INFO | hr_assistant.vector_store | Creating retriever with top_k=3
+2026-08-03 17:35:30,563 | INFO | hr_assistant.llm | Initializing LLM model 'openai/gpt-oss-20b'
+2026-08-03 17:35:30,668 | INFO | hr_assistant.agent | Creating HR agent with 1 tool(s)
+2026-08-03 17:35:30,673 | INFO | hr_assistant.agent | HR agent ready
+2026-08-03 17:35:30,673 | INFO | hr_assistant.pipeline | HR assistant is ready to take questions
+2026-08-03 17:35:48,416 | INFO | __main__ | === Streamlit run: new question received ===
+2026-08-03 17:35:48,424 | INFO | hr_assistant.pipeline | User question: Hi, who are you?
+2026-08-03 17:35:49,446 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-03 17:35:49,486 | INFO | hr_assistant.pipeline | Final answer: Hello! I’m your friendly HR assistant here at Acme Corporation. I’m here to help answer any questions you have about our policies, benefits, or anything else related to working with us. How can I assist you today?
