@@ -4,8 +4,12 @@ Run with: python main.py
 """
 
 from hr_assistant.pipeline import ask , build_hr_assistant
+from hr_assistant.logger import get_logger
+
+logger = get_logger(__name__)
 
 def main():
+    logger.info("=== CLI run started ===")
     print("Building the HR Policy Assitant...")
     agent = build_hr_assistant()
     print("Assitant reay!\n")
@@ -25,6 +29,7 @@ def main():
         print("=" * 60)
         print()
 
+        logger.info("=== CLI run finished ===")
 
 if __name__ == "__main__":
     main()
