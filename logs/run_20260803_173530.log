@@ -18,3 +18,7 @@ ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
 2026-08-03 17:35:48,424 | INFO | hr_assistant.pipeline | User question: Hi, who are you?
 2026-08-03 17:35:49,446 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
 2026-08-03 17:35:49,486 | INFO | hr_assistant.pipeline | Final answer: Hello! I’m your friendly HR assistant here at Acme Corporation. I’m here to help answer any questions you have about our policies, benefits, or anything else related to working with us. How can I assist you today?
+2026-08-03 17:45:08,615 | INFO | __main__ | === Streamlit run: new question received ===
+2026-08-03 17:45:08,622 | INFO | hr_assistant.pipeline | User question: Can you tell me about Ai
+2026-08-03 17:45:09,676 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-03 17:45:09,684 | INFO | hr_assistant.pipeline | Final answer: I’m sorry, but I don’t have information on that topic.
